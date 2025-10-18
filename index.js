@@ -21,9 +21,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // ✅ Changed here to bind on 0.0.0.0
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`
-★ɢɪᴠᴇ ꜱᴛᴀʀꜱ ᴛᴏ ᴊᴇᴘʜᴛᴇʀ ᴛᴇᴄʜ‼️
+Gaga XMD Connected Successfully ‼️
 
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴇᴘʜᴛᴇʀ ᴛᴇᴄʜ
+Powered by Traxxion Inc Tech 
 
 Server running on http://localhost:` + PORT);
 });

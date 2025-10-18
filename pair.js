@@ -38,25 +38,25 @@ const config = {
     AUTO_LIKE_EMOJI: ['🧩', '🍉', '💜', '🌸', '🪴', '💊', '💫', '🍂', '🌟', '🎋', '😶‍🌫️', '🫀', '🧿', '👀', '🤖', '🚩', '🥰', '🗿', '💜', '💙', '🌝', '🖤', '💚'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/BAE3fB7V8Df203xfITReuu?mode=ac_t',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/LufOYxXwmAKIRfrUVfmMQ1',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://files.catbox.moe/6jfywh.jpg',
-    NEWSLETTER_JID: '120363420646690174@newsletter',
+    IMAGE_PATH: 'https://files.catbox.moe/nld69x.jpg',
+    NEWSLETTER_JID: '12030174@newsletter',
     NEWSLETTER_MESSAGE_ID: '1',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    BOT_NAME: 'ᴊꜰx ᴍᴅ-x ᴍɪɴɪ',
-    OWNER_NAME: 'ᴊᴇᴘʜᴛᴇʀ ᴛᴇᴄʜ',
-    OWNER_NUMBER: '2349046157539',
+    BOT_NAME: 'Gaga XMD',
+    OWNER_NAME: 'Lil Gaga',
+    OWNER_NUMBER: '263716857999',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '> © ᴊᴇᴘʜᴛᴇʀ ᴛᴇᴄʜ',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbAxkJl0lwgqAOojKI3R',
+    BOT_FOOTER: '> © PoweredbyTraxxion Inc Tech',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6njtcG3R3n7HS5Vs0P',
     BUTTON_IMAGES: {
-        ALIVE: 'https://files.catbox.moe/6jfywh.jpg',
-        MENU: 'https://files.catbox.moe/6jfywh.jpg',
-        OWNER: 'https://files.catbox.moe/6jfywh.jpg',
-        SONG: 'https://files.catbox.moe/6jfywh.jpg',
-        VIDEO: 'https://files.catbox.moe/6jfywh.jpg'
+        ALIVE: 'https://files.catbox.moe/nld69x.jpg',
+        MENU: 'https://files.catbox.moe/hvljlp.jpg',
+        OWNER: 'https://files.catbox.moe/nld69x.jpg',
+        SONG: 'https://files.catbox.moe/hvljlp.jpg',
+        VIDEO: 'https://files.catbox.moe/nld69x.jpg'
     }
 };
 
@@ -66,7 +66,7 @@ function generateListMessage(text, buttonTitle, sections) {
         text: text,
         footer: config.BOT_FOOTER,
         title: buttonTitle,
-        buttonText: "ꜱᴇʟᴇᴄᴛ",
+        buttonText: "Gaga",
         sections: sections
     };
 }

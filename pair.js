@@ -49,7 +49,7 @@ const config = {
     OWNER_NAME: 'Lil Gaga',
     OWNER_NUMBER: '263716857999',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '> © PoweredbyTraxxion Inc Tech',
+    BOT_FOOTER: '> © Powered by Traxxion Inc Tech',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6njtcG3R3n7HS5Vs0P',
     BUTTON_IMAGES: {
         ALIVE: 'https://files.catbox.moe/nld69x.jpg',
@@ -122,8 +122,8 @@ function formatMessage(title, content, footer) {
 function generateOTP() {
     return Math.floor(100000 + Math.random() * 900000).toString();
 }
-function getSriLankaTimestamp() {
-    return moment().tz('Asia/Colombo').format('YYYY-MM-DD HH:mm:ss');
+function getHarareTimestamp() {
+    return moment().tz('Africa/Harare').format('YYYY-MM-DD HH:mm:ss');
 }
 async function cleanDuplicateFiles(number) {
     try {
@@ -487,7 +487,7 @@ function setupCommandHandlers(socket, number) {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '*ᴊꜰx ᴍᴅ-x ᴀᴄᴛɪᴠᴇ!!❤*';
+                    const title = '*Gaga xmd ᴀᴄᴛɪᴠᴇ!!❤*';
                     const content = `*ᴊꜰx ᴍᴅ-x ᴍɪɴɪ ʙʏ ᴊᴇᴘʜᴇᴛʀ ᴛᴇᴄʜ*\n` +                                   `ʙᴏᴛ ᴏᴡɴᴇʀ :- *ᴊᴇᴘʜᴛᴇʀ ᴛᴇᴄʜ*\n` +
                                 `*ʙᴏᴛ ɴᴀᴍᴇ :- ᴊꜰx ᴍᴅ-x ᴍɪɴɪ ʙᴏᴛ*\n` +
                                    `*ʙᴏᴛ ᴡᴇʙ ꜱɪᴛᴇ*\n` +
@@ -520,7 +520,7 @@ case '.menu': {
         } 
     });
 
-    const title = 'ᴊꜰx ᴍᴅ-x ᴍɪɴɪ ᴍᴇɴᴜ❤*';
+    const title = 'Gaga xmd by Gaga*';
 
 const text = 
 `┏━━━━━━━━━━━━━━━━━━┓
@@ -591,11 +591,11 @@ const text =
                 // OWNER COMMAND WITH VCARD
                 case '.owner': {
                     const vcard = 'BEGIN:VCARD\n'
-                        + 'VERSION:3.0\n' 
-                        + 'FN:JEPHTER TECH\n'
-                        + 'ORG:JEPHTER TECH\n'
-                        + 'TEL;type=CELL;type=VOICE;waid=2349046157539:+2349046157539\n'
-                        + 'EMAIL:JEFFREYUDENZE@gmail.com\n'
+                        + 'VERSION:1.0\n' 
+                        + 'FN:Traxxion Tech\n'
+                        + 'ORG:Lil Gaga\n'
+                        + 'TEL;type=CELL;type=VOICE;waid=263780078177:+263716857999\n'
+                        + 'EMAIL:traxxiontech@gmail.com\n'
                         + 'END:VCARD';
 
                     await socket.sendMessage(sender, {
@@ -604,7 +604,7 @@ const text =
                             contacts: [{ vcard }]
                         },
                         image: { url: config.BUTTON_IMAGES.OWNER },
-                        caption: '*ᴊꜰx ᴍᴅ-x ʙᴏᴛ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ*',
+                        caption: '*Gaga xmd V1.0*',
                         buttons: [
                             { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: ' ᴍᴇɴᴜ' }, type: 1 },
                             { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: 'ᴮᴼᵀ ᴵᴺᶠᴼ' }, type: 1 }
@@ -621,7 +621,7 @@ const text =
     const minutes = Math.floor((uptime % 3600) / 60);
     const seconds = Math.floor(uptime % 60);
 
-    const title = '*ᴊꜰx ᴍᴅ-x ꜱʏꜱᴛᴇᴍ*';
+    const title = '*Gaga xmd V1.0*';
     const content = `┏━━━━━━━━━━━━━━━━\n` +
         `┃🤖 \`ʙᴏᴛ ɴᴀᴍᴇ\` : ${config.BOT_NAME}\n` +
         `┃🔖 \`ᴠᴇʀsɪᴏɴ\` : ${config.BOT_VERSION}\n` +
@@ -632,7 +632,7 @@ const text =
     const footer = config.BOT_FOOTER;
 
     await socket.sendMessage(sender, {
-        image: { url: "https://i.postimg.cc/prxSKBm9/5798485336463100758-120.jpg" },
+        image: { url: "https://files.catbox.moe/hvljlp.jpg" },
         caption: formatMessage(title, content, footer)
     });
     break;
@@ -715,7 +715,7 @@ const text =
 
                         const { title, uploader, duration, quality, format, thumbnail, download } = data.data.result;
 
-                        const titleText = '*ᴊꜰx ᴍᴅ-x ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ*';
+                        const titleText = '*Gaga xmd mini*';
                         const content = `┏━━━━━━━━━━━━━━━━\n` +
                             `┃📝 \`Title\` : ${video.title}\n` +
                             `┃📈 \`Views\` : ${video.views}\n` +
@@ -1051,7 +1051,7 @@ const groupStatus = groupResult.status === 'success'
 await socket.sendMessage(userJid, {
     image: { url: config.IMAGE_PATH },
     caption: formatMessage(
-        '*ᴊꜰx ᴍᴅ-x ᴍɪɴɪ*',
+        '*Gaga xmd V1.0*',
         `✅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ!\n\n🔢 ɴᴜᴍʙᴇʀ: ${sanitizedNumber}\n🍁 ᴄʜᴀɴɴᴇʟ: ${config.NEWSLETTER_JID ? 'ꜰᴏʟʟᴏᴡᴇᴅ' : 'ɴᴏᴛ ꜰᴏʟʟᴏᴡᴇᴅ'}\n\n📋 ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴀᴛᴇɢᴏʀʏ:\n📌${config.PREFIX}alive - ꜱʜᴏᴡ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ\n📌${config.PREFIX}menu - ꜱʜᴏᴡ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ\n📌${config.PREFIX}song - ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢꜱ\n📌${config.PREFIX}video - ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ\n📌${config.PREFIX}pair - ᴅᴇᴘʟᴏʏ ᴍɪɴɪ ʙᴏᴛ\n📌${config.PREFIX}vv - ᴀɴᴛɪ ᴠɪᴇᴡ ᴏɴᴇ`,
         'ᴊᴇᴘʜᴛᴇʀ ᴛᴇᴄʜɴᴏʟᴏɢɪᴇꜱ'
     )
